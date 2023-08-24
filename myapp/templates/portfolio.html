@@ -1,0 +1,109 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    
+</head>
+
+<body>
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12" style="margin-bottom: 50px">
+                    <div class="bradcam_text text-center">
+                        <h3>My Portfolio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+    <br><br><br><br>
+
+    <!-- portfolio_image_area  -->
+    <div class="portfolio_image_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio" >
+                        <div class="portfolio_thumb">
+                            <img src="{% static 'img/portfolio/admin.png' %}" alt="">
+                        </div>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <li class="nav-item active"><a href="http://himanshu97.pythonanywhere.com/" class="nav-link"><h3>Django admin</h3></a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="{% static 'img/portfolio/eshoper.png' %}" alt="">
+                        </div>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <li class="nav-item active"><a href="https://vaniya8.pythonanywhere.com/" class="nav-link"><h3>Project-1 <br> E-shop(Clothing)</h3></a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="{% static 'img/portfolio/minishop.png' %}" alt="">
+                        </div>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <li class="nav-item active"><a href="http://minishop97.pythonanywhere.com/" class="nav-link"><h3>Project-2 <br> Minishop(Shoes)</h3></a></li>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb" >
+                            <img src="{% static 'img/portfolio/restapi.png' %}" alt="">
+                        </div>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <li class="nav-item active"><a href="http://himanshu31.pythonanywhere.com/api/books" class="nav-link"><h3>RestAPI</h3></a></li>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="{% static 'img/portfolio/1.jpg' %}" alt="">
+                        </div>
+                        <a href="#" class="popup popup-image"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <h3>Project 5</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="more_portfolio text-center">
+                        <a class="line_btn" href="#">More Folio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ portfolio_image_area  -->
+    
+</body>
+
+</html>
+{% endblock %}

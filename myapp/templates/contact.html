@@ -1,0 +1,128 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    
+</head>
+
+<body>
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section section_padding">
+    <div class="container">
+      <div class="d-none d-sm-block mb-3 pb-3">
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Get in Touch</h2>
+        </div>
+
+        <div class="col-lg-8">
+          {% if msg %}
+            <b style="color: blue">{{msg}}</b>
+          {% endif %}
+          <form action="{% url 'contact-data' %}" class="form-contact contact_form"  method="post">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100" name="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+        <!--      <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button> -->
+              <input type="submit" value="Send Message" class="button button-contactForm btn_4 boxed-btn">
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <a href="https://www.google.com/maps/place/Sanand+Bus+Station/@22.9919246,72.3759733,18z/data=!4m15!1m8!3m7!1s0x395e99aa4b50bed5:0x95e5fe19fa36396d!2sSanand,+Gujarat+382110!3b1!8m2!3d22.9919637!4d72.3772986!16zL20vMDl2djBq!3m5!1s0x395e993f04fb8ec9:0xa44bd8d3f57cd5f7!8m2!3d22.9925711!4d72.3770541!16s%2Fg%2F11mw07yd58?entry=ttu"><span class="contact-info__icon"><i class="ti-home" style="color: blue"></i></span></a>
+            <div class="media-body">
+              <h3>Ahmedabad, Gujarat, India.</h3>
+              <p>Sanand-382110.</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet" style="color: blue"></i></span>
+            <div class="media-body">
+              <h3 style="color: black">+91-9624581338</h3>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email" style="color: blue"></i></span>
+            <div class="media-body">
+              <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCDlgxfhCzHPZlkWxRcnWtTJjZpjgngszbGHtHdjGsRrJqmQqCkMMCKdPcfRczHdfGRrXV"><h3><u style="color: blue">himanshuvaniya1997@gmail.com</u></h3></a>
+            </div>
+          </div>
+
+          <div class="social_links">
+                <ul>
+                  <a href="https://www.facebook.com/himanshu.vaniya.923"> <i class="fa fa-facebook" style="margin-right: 20px"></i> </a>
+                                
+                  <a href="https://github.com/himanshuvaniya1997"> <i class="fa fa-github" style="margin-right: 20px"></i> </a>
+                                  
+                  <a href="http://instagram.com/__hardikkkk___/"> <i class="fa fa-instagram" style="margin-right: 20px"></i> </a>
+
+                  <a href="https://www.linkedin.com/in/himanshu-vaniya-42823b183/"> <i class="fa fa-linkedin" style="margin-right: 20px"></i> </a>
+
+                  <a href="https://twitter.com/himanshu_v97"> <i class="fa fa-twitter" style="margin-right: 20px"></i> </a>
+                </ul>
+          </div>
+
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->
+    
+</body>
+
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+
